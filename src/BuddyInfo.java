@@ -41,7 +41,7 @@ public class BuddyInfo {
 		BuddyInfo buddy = new BuddyInfo();
 		buddy.setName("Homer");
 		System.out.println("Hello " + buddy.getName() + "!");
-
+		// Added this useless comment
 	}
 
 }
