@@ -12,8 +12,9 @@ import java.util.*;
 public class AddressBook {
 
 	private ArrayList<BuddyInfo> listOfBuddies;
+	
 	public AddressBook(){
-		ArrayList<BuddyInfo> listOfBuddies = new ArrayList<BuddyInfo>();
+		listOfBuddies = new ArrayList<BuddyInfo>();
 	}
 	
 	
@@ -29,19 +30,11 @@ public class AddressBook {
 	}
 	
 	
-	
 	public static void main(String[] args) {
-		System.out.println("Addres Book");
-
-		BuddyInfo buddy = new BuddyInfo();
-		AddressBook Book1 = new AddressBook();
-		
-		Book1.addBuddy(buddy);
-		Book1.removeBuddy(0);
-				
-		
-		
-		
+		BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", 1234);
+		AddressBook addressBook = new AddressBook();
+		addressBook.addBuddy(buddy);
+		addressBook.removeBuddy(0);		
 	}
 	
 	
